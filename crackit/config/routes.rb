@@ -1,7 +1,8 @@
 Crackit::Application.routes.draw do
 root :to => 'login#start'
 resources :login
-    #resources :video
+#resources :video
+resources :main
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
