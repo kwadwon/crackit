@@ -5,9 +5,19 @@
   color: black; }
 
 body {
-  background-image: url("");
+  background-image: url("backgroundpic.png");
+  /*background-image:url('logo.png');*/
   /*background-color:#cccccc;*/
-  background-repeat: no-repeat; }
+  background-repeat: repeat-x; }
 
 #login {
   float: right; }
+
+li {
+  list-style: none; }
+
+.logo-name {
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  padding: 15px; }
