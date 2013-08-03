@@ -1,4 +1,6 @@
 Crackit::Application.routes.draw do
+  devise_for :users
+
 root :to => 'login#start'
 resources :login
 resources :video

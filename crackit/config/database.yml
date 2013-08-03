@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: personalTest
+  database: crackit
   username: juntosuser
   password: vivajuntos
   host: localhost
