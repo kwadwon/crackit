@@ -4,10 +4,7 @@ class ApplicationController < ActionController::Base
 
 	def after_sign_in_path_for(resource)
 
-		redirect_to(:action => "show")
+		redirect_to(:controller => "home",:action => "show")
 		return
-	end
-		respond_to do |format|
-    	show.html 
 	end
 end
