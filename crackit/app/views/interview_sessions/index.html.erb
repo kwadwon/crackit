@@ -2,13 +2,22 @@
 
 <table>
   <tr>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>User ID</th>
+    <th>Room Key</th>
+    <th>Room ID</th>
+    <th>isValid</th>
+    <th>Meeting Date</th>
+    <th>Meeting Time</th>
   </tr>
 
 <% @interview_sessions.each do |interview_session| %>
   <tr>
+    <td><%= interview_session.id%></td>
+    <td><%= interview_session.room_key%></td>
+    <td><%= interview_session.room_id%></td>
+    <td><%= interview_session.isValid%></td>
+    <td><%= interview_session.eventdate%></td>
+    <td><%= interview_session.eventtime%></td>
     <td><%= link_to 'Show', interview_session %></td>
     <td><%= link_to 'Edit', edit_interview_session_path(interview_session) %></td>
     <td><%= link_to 'Destroy', interview_session, method: :delete, data: { confirm: 'Are you sure?' } %></td>
