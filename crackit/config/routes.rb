@@ -1,7 +1,8 @@
 Crackit::Application.routes.draw do
 root :to => 'login#start'
 resources :login
-resources :video
+#resources :video
+resources :main
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -58,5 +59,12 @@ resources :video
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
+     resources :video do
+       collection do
+         get 'show'
+		 get 'join'
+       end
+     end
+
+   # match ':controller(/:action(/:id))(.:format)'
 end
