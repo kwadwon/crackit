@@ -5,7 +5,17 @@
 .title-bar { 
   background-color: purple;
   height: 100px; 
-  text-align: right;
   font-weight: bold;
   color: black;
+}
+
+body
+{
+background-image:url('');
+/*background-color:#cccccc;*/
+background-repeat:no-repeat;
+}
+
+#login{
+	float: right;
 }
