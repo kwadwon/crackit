@@ -1,0 +1,28 @@
+<textarea id="codeMirror" name="testCodeWindow"></textarea>
+
+<script type="text/javascript" language="javascript">
+ 	var editor = CodeMirror.fromTextArea(document.getElementById("codeMirror"),
+  	{
+  		mode: "javascript",
+  		theme: "night",
+  	 	lineNumbers: true,
+  	 	lineWrapping: true,
+  	 	autofocus: true
+  	 });
+
+ 	var newDoc = new Firebase('https://crackit.firebaseio.com/docs/-J03WDQJc2z1zRvcTQMe ');
+
+ 	editor.on("change", function(cmDoc, changeObj){
+ 		
+ 		newDoc.child("code").set(editor.getValue());
+ 	});
+
+ 	newDoc.on("value", function(snapshot){
+ 		console.log("new text:" + snapshot.val().code);
+ 		if (snapshot.val().code !== editor.getValue()){
+ 			//console.log("new code: " + snapshot.val().code);
+ 			editor.setValue(snapshot.val().code);
+ 		}
+ 	});
+
+</script>
