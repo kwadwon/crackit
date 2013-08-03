@@ -1,63 +1,63 @@
-body, html
-  background-color: #f5f5f5 !important;
+// body, html
+//   background-color: #f5f5f5 !important;
 
-.title-bar{
-  position: relative;
-  background-color: #444;
-  padding: 20px;
+// .title-bar{
+//   position: relative;
+//   background-color: #444;
+//   padding: 20px;
 
-  .title-bar-text
-    text-align: center;
-    font-family: helvetica;
-    color: #fff;
-    font-weight: normal;
+//   .title-bar-text
+//     text-align: center;
+//     font-family: helvetica;
+//     color: #fff;
+//     font-weight: normal;
 
-  #back-button
-    position: absolute;
-    top: 50%;
-    margin-top: -20px;
-
-
-  #stop-experiment
-    position: absolute;
-    top: 50%;
-    margin-top: -20px;
-}
-
-.options-container{
-  padding: 100px;
-  text-align: center;
-}
-
-.view-reports-border{
-  display: inline-block;
-  border-style: solid;
-  width: 300px;
-  height: 300px;
-  color: #ccc;
-  background-color: white;
-  border-width: 1px;
-  margin-right: 30px;
+//   #back-button
+//     position: absolute;
+//     top: 50%;
+//     margin-top: -20px;
 
 
-  .view-reports-pic
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-}
+//   #stop-experiment
+//     position: absolute;
+//     top: 50%;
+//     margin-top: -20px;
+// }
 
-.split-traffic-border{
-  display: inline-blockl;
-  border-style: solid;
-  width: 300px;
-  height: 300px;
-  color: #ccc;
-  background-color: white;
-  border-width: 1px;
-  margin-left: 30px;
+// .options-container{
+//   padding: 100px;
+//   text-align: center;
+// }
 
-  .split-traffic-pic
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-}
+// .view-reports-border{
+//   display: inline-block;
+//   border-style: solid;
+//   width: 300px;
+//   height: 300px;
+//   color: #ccc;
+//   background-color: white;
+//   border-width: 1px;
+//   margin-right: 30px;
+
+
+//   .view-reports-pic
+//     display: block;
+//     margin: auto;
+//     margin-top: 30px;
+// }
+
+// .split-traffic-border{
+//   display: inline-blockl;
+//   border-style: solid;
+//   width: 300px;
+//   height: 300px;
+//   color: #ccc;
+//   background-color: white;
+//   border-width: 1px;
+//   margin-left: 30px;
+
+//   .split-traffic-pic
+//     display: block;
+//     margin: auto;
+//     margin-top: 30px;
+// }
