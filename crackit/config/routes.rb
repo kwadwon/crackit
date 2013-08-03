@@ -1,4 +1,7 @@
 Crackit::Application.routes.draw do
+  resources :interview_sessions
+
+
   devise_for :users
 
 root :to => 'login#start'

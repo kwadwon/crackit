@@ -11,11 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130803065514) do
+ActiveRecord::Schema.define(:version => 20130803192132) do
+
+  create_table "interview_sessions", :force => true do |t|
+    t.datetime "eventdate"
+    t.datetime "eventtime"
+    t.string   "room_key"
+    t.string   "room_id"
+    t.boolean  "isValid"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
+    t.boolean  "isInterviewer"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
