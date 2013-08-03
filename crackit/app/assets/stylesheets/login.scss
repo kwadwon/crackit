@@ -6,16 +6,16 @@
   background-color: purple;
   height: 100px; 
   font-weight: bold;
+  font-size: 25px;
   color: black;
 
 }
 
-body
+html
 {
 background-image:url('backgroundpic.png');
 /*background-image:url('logo.png');*/
 /*background-color:#cccccc;*/
-background-repeat:repeat-x;
 }
 
 #login{
