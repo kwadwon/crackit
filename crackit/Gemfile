@@ -38,3 +38,7 @@ gem 'devise'
 
 # To use debugger
 # gem 'debugger'
+
+
+# OpenTok gem
+gem 'opentok'
