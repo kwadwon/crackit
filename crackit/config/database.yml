@@ -7,8 +7,8 @@ development:
   adapter: postgresql
   encoding: unicode
   database: crackit
-  username: juntosuser
-  password: vivajuntos
+  username: postgres
+  password: Angelina4real
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
