@@ -13,8 +13,4 @@ $(document).ready(function(){
 		var publisher = TB.initPublisher(apiKey, 'myPublisherDiv');
 		session.publish(publisher);
 	}
-	
-
 });
-
-
