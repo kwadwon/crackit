@@ -58,5 +58,8 @@ module Crackit
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Adding codeMirror file paths
+    config.assets.paths << "#{Rails.root}/lib/assets/codemirror"
   end
 end
